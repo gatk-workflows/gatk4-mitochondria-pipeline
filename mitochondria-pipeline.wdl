@@ -1,5 +1,34 @@
-import "https://api.firecloud.org/ga4gh/v1/tools/mt:AlignmentPipeline/versions/5/plain-WDL/descriptor" as AlignAndMarkDuplicates
-import "https://api.firecloud.org/ga4gh/v1/tools/mt:MitochondrialCalling/versions/11/plain-WDL/descriptor" as MutectAndFilter
+## Copyright Broad Institute, 2019
+##
+## Purpose :
+## Workflow for SNP and INDEL variant calling on mitochondria.
+##
+##  Requirements/expectations :
+## - BAM or CRAM file
+## - Median of the coverage over the autosome (if available, another central statistic would work too)
+##
+## Output :
+## - A VCF file and its index
+## - Addtional Metrics 
+## - Optional realigned to chrM BAM
+##
+## Software version notes :
+## - GATK 4 or later
+## - Cromwell version support
+##  - Successfully tested on v37
+##  - Does not work on versions < v23 due to output syntax
+##
+## LICENSING :
+## This script is released under the WDL source code license (BSD-3) (see LICENSE in
+## https://github.com/broadinstitute/wdl). Note however that the programs it calls may
+## be subject to different licenses. Users are responsible for checking that they are
+## authorized to run all programs before running this script. Please see the docker
+## page at https://hub.docker.com/r/broadinstitute/genomes-in-the-cloud/ for detailed
+## licensing information pertaining to the included programs.
+
+
+import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/dev/alignment-pipeline.wdl" as AlignAndMarkDuplicates
+import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/dev/mitochondrial-calling.wdl" as MutectAndFilter
 
 workflow MitochondriaPipeline {
 
