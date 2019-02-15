@@ -19,6 +19,8 @@ Workflow for SNP and INDEL variant calling on mitochondria.
   - Does not work on versions < v23 due to output syntax
 
 ### Important Note :
+- The provided JSON is meant to be a ready to use example JSON template of the workflow. It is the user’s responsibility to correctly set the reference and resource input variables using the [GATK Tool and Tutorial Documentations](https://software.broadinstitute.org/gatk/documentation/).
+- Relevant reference and resources bundles can be accessed in [Resource Bundle](https://software.broadinstitute.org/gatk/download/bundle).
 - Runtime parameters are optimized for Broad's Google Cloud Platform implementation.
 - For help running workflows on the Google Cloud Platform or locally please
 view the following tutorial [(How to) Execute Workflows from the gatk-workflows Git Organization](https://software.broadinstitute.org/gatk/documentation/article?id=12521).
