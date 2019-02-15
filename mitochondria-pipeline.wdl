@@ -27,8 +27,8 @@
 ## licensing information pertaining to the included programs.
 
 
-import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/dev/alignment-pipeline.wdl" as AlignAndMarkDuplicates
-import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/dev/mitochondrial-calling.wdl" as MutectAndFilter
+import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/dev/tasks/alignment-pipeline.wdl" as AlignAndMarkDuplicates
+import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/dev/tasks/mitochondrial-calling.wdl" as MutectAndFilter
 
 workflow MitochondriaPipeline {
 
