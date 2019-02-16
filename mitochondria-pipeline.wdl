@@ -13,7 +13,7 @@
 ## - Optional realigned to chrM BAM
 ##
 ## Software version notes :
-## - GATK 4 or later
+## - GATK 4.1
 ## - Cromwell version support
 ##  - Successfully tested on v37
 ##  - Does not work on versions < v23 due to output syntax
@@ -27,8 +27,8 @@
 ## licensing information pertaining to the included programs.
 
 
-import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/dev/tasks/alignment-pipeline.wdl" as AlignAndMarkDuplicates
-import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/dev/tasks/mitochondrial-calling.wdl" as MutectAndFilter
+import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/1.0.0/tasks/alignment-pipeline.wdl" as AlignAndMarkDuplicates
+import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/1.0.0/tasks/mitochondrial-calling.wdl" as MutectAndFilter
 
 workflow MitochondriaPipeline {
 

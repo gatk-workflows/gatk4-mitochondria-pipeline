@@ -13,7 +13,7 @@ Workflow for SNP and INDEL variant calling on mitochondria.
  - Optional realigned to chrM BAM
 
 ### Software version notes :
-- GATK 4 or later 
+- GATK 4.1 
 - Cromwell version support 
   - Successfully tested on v37 
   - Does not work on versions < v23 due to output syntax
@@ -28,5 +28,5 @@ view the following tutorial [(How to) Execute Workflows from the gatk-workflows 
 - Please visit the [User Guide](https://software.broadinstitute.org/gatk/documentation/) site for further documentation on our workflows and tools.
 
 ### LICENSING :
-Copyright Broad Institute, 2018 | BSD-3
+Copyright Broad Institute, 2019 | BSD-3
 This script is released under the WDL open source code license (BSD-3) (full license text at https://github.com/openwdl/wdl/blob/master/LICENSE). Note however that the programs it calls may be subject to different licenses. Users are responsible for checking that they are authorized to run all programs before running this script.
