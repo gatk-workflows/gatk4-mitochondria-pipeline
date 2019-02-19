@@ -1,6 +1,6 @@
 {
   "##_COMMENT1": "Inputs",
-  "MitochondriaPipeline.wgs_aligned_input_bam": "gs://gatk-best-practices/mitochondria-pipeline/G97753.NA12878.bam",
+  "MitochondriaPipeline.wgs_aligned_input_bam_or_cram": "gs://gatk-best-practices/mitochondria-pipeline/G97753.NA12878.bam",
   
   "##_COMMENT2": "Reference and Resources",
   "#MitochondriaPipeline.ref_fasta": "File? (optional)",

@@ -40,7 +40,7 @@ workflow MitochondriaPipeline {
     autosomal_coverage: "Median coverage of full input bam"
     out_vcf: "Final VCF of mitochondrial SNPs and INDELs"
   }
-  File wgs_aligned_input_bam
+  File wgs_aligned_input_bam_or_cram
   Int? autosomal_coverage
 
   File MT_with_numts_intervals
@@ -94,7 +94,7 @@ workflow MitochondriaPipeline {
 
   call SubsetBam {
     input:
-      input_bam = wgs_aligned_input_bam,
+      input_bam = wgs_aligned_input_bam_or_cram,
       interval_list = MT_with_numts_intervals,
       ref_fasta = ref_fasta,
       ref_fasta_index = ref_fasta_index,

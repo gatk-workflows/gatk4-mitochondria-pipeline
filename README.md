@@ -6,6 +6,8 @@ Workflow for SNP and INDEL variant calling on mitochondria.
 ### Requirements/expectations :
  - BAM or CRAM file
  - Median of the coverage over the autosome (if available, another central statistic would work too)
+ - Reference fasta (along with its index and dictionary) is only required when input is a BAM
+ - Default for `max_read_length` is 151, this is purely an optimization parameter and won't effect the results.
 
 ### Output :
  - A VCF file and its index
@@ -20,7 +22,7 @@ Workflow for SNP and INDEL variant calling on mitochondria.
 
 ### Important Note :
 - The provided JSON is meant to be a ready to use example JSON template of the workflow. It is the user’s responsibility to correctly set the reference and resource input variables using the [GATK Tool and Tutorial Documentations](https://software.broadinstitute.org/gatk/documentation/).
-- Relevant reference and resources bundles can be accessed in [Resource Bundle](https://software.broadinstitute.org/gatk/download/bundle).
+- Relevant reference and resources bundles can be accessed in [Resource Bundle](https://software.broadinstitute.org/gatk/download/bundle) and [gs://gatk-best-practices/mitochondria-pipeline](https://console.cloud.google.com/storage/browser/gatk-best-practices/mitochondria-pipeline/).
 - Runtime parameters are optimized for Broad's Google Cloud Platform implementation.
 - For help running workflows on the Google Cloud Platform or locally please
 view the following tutorial [(How to) Execute Workflows from the gatk-workflows Git Organization](https://software.broadinstitute.org/gatk/documentation/article?id=12521).
