@@ -28,7 +28,7 @@
 
 version 1.0
 
-import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/1.0.0/tasks/align-and-call.wdl" as AlignAndCall
+import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/ms_update/tasks/align-and-call.wdl" as AlignAndCall
 
 workflow MitochondriaPipeline {
 
