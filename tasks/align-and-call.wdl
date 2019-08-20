@@ -1,6 +1,6 @@
 version 1.0
 
-import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/ms_update/tasks/alignment-pipeline.wdl" as AlignAndMarkDuplicates
+import "https://raw.githubusercontent.com/gatk-workflows/gatk4-mitochondria-pipeline/1.1.0/tasks/alignment-pipeline.wdl" as AlignAndMarkDuplicates
 
 workflow AlignAndCall {
   meta {
